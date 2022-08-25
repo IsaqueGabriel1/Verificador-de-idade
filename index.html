@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Verificador de Idade</title>
+</head>
+<body onload="carregar()">
+    <header id="head">
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section id="boxVerificador">
+        <div id="txtAnoNas">
+            <label for="">Ano de nascimento:</label>
+            <input type="text" id="txtNas">
+        </div>
+        <div id="Verificador">
+            <label for="">Sexo:</label>
+            <input type="radio" name="radSex" id="cbHomem">
+            <label for="">Homem</label>
+            <input type="radio" name="radSex" id="cbMulher">
+            <label for="">Mulher</label>
+            <input type="button" value="Verificar" id="btnVeri" onclick="verificar()">
+        </div>
+        <div id="imgPessoa">
+            <p id="resp">Preencha os dados acima para ver o resultado!</p>
+            <img id="foto">
+        </div>
+    </section>
+    <footer id="lblRodape">
+        <p>&copy;Isaque Gabriel</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
